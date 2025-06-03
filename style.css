@@ -26,7 +26,7 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(to bottom, #ffe1e1, #ff217de0), url(./r.jpg);
+        background: linear-gradient(to bottom, #9d78f3, #6a03af), url(./r.jpg);
         transition: all 1s ease;
     }
     #wallpaper{width:100%;height:100%;transform: scale(2);transition:all 1.3s ease;}
@@ -113,13 +113,13 @@ body {
         transition: all .3s ease;
     }
     #ket, .halo {
-        text-shadow: 1px 1px 2px rgb(10 3 3 / 67%);
+        text-shadow: 2px 2px 2px rgb(10 3 3 / 67%);
         font-size: 1.3rem;
         letter-spacing: 2px;
         font-weight: 600;
         font-weight: 700;
         margin-left: 36px;
-        color: #240606;
+        color: #ffffff;
         /* backdrop-filter: blur(8px); */
     }
 
@@ -159,7 +159,7 @@ body {
 
 
     .swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation {
-        background: linear-gradient(to bottom, #ffe1e1, #ff217de0), url(./r.jpg);
+        background: linear-gradient(to bottom, #9d78f3, #6a03af), url(./r.jpg);
         height: 100vh;
     }
 

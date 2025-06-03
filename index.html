@@ -13,14 +13,14 @@
   <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
 
   <!-- Update title and description for a birthday theme -->
-  <title>HBD 5.0 | Aoudumber Bade</title>
+  <title>Feliz aniversário</title>
   <link rel="icon" type="image/x-icon" href="https://www.palingit.com/favicon.ico" />
   <meta name="description" content="A special birthday greeting" />
 </head>
 
-<body style="background: linear-gradient(to bottom, #ffe1e1, #ff217de0), url(./r.jpg);
+<body style="background: linear-gradient(to bottom, #9d78f3, #6a03af), url(./r.jpg);
     height: 100vh;">
-  <audio src="./y2mate (mp3cut.net).mp3" id="linkmp3" class="sembunyi"></audio>
+  <audio src="./musica.mp3" id="linkmp3" class="sembunyi"></audio>
 
   <div id="bodyblur">
     <!-- Wallpaper -->
@@ -30,17 +30,17 @@
   <div id="Content">
     <div id="kadoIn">
       <!-- Gift Button -->
-      <img src="./Valentine-Surprise.png" alt="Open Gift Button" />
+      <img src="./v.png" alt="Open Gift Button" />
     </div>
     <p id="ket">
-      <span style="font-style: italic; color: rgb(0,0,0); margin-top: 3px !important; ">Open the gift, cutie:3</span>
+      <span style="font-style: italic; color: rgb(255, 255, 255); margin-top: 3px !important; ">Abra o presente, amor</span>
     </p>
 
     <div class="kumpulanstiker" style="margin-top: 95px;">
       <!-- Stickers for Content -->
-      <img src="https://media.tenor.com/4Ijycn6xFzUAAAAj/mochi-blue-roses.gif" id="fotostiker" />
-      <img src="https://feeldreams.github.io/bunga.gif" id="fotostiker1" />
-      <img src="https://feeldreams.github.io/pandacoklat.gif" id="fotostiker2" />
+      <img src="https://i.gifer.com/QtRw.gif" id="fotostiker" />
+      <img src="https://i.gifer.com/6nv.gif" id="fotostiker1" />
+      <img src="./Gif natal.gif" id="fotostiker2" />
       <img src="https://media.tenor.com/snFoLI-S9CQAAAAj/milk-and-mocha.gif" id="fotostiker3" />
       <img src="https://feeldreams.github.io/emawh.gif" id="fotostiker4" />
       <img src="https://feeldreams.github.io/pandacoklat.gif" id="fotostiker5" />
@@ -52,11 +52,11 @@
       <blockquote id="bq" data-text="💞">
         <!-- Update the messages for a birthday greeting -->
         <p id="kalimat">
-          Happy Birthday, gorgeous! Today is all about celebrating you.
+          Feliz aniversário, minha preta! Sempre é dia de celebrar você.
         </p>
 
         <!-- Message -->
-        <p id="pesan1">Tap here for your birthday surprise! 🎉</p>
+        <p id="pesan1">Clique aqui para a surpresa de aniversário! 🎉</p>
         <div id="kolombaru">
           <li id="lv1">🎂</li>
           <li id="lv2">🎁</li>
@@ -64,18 +64,17 @@
           <li id="lv4">💖</li>
         </div>
 
-        <p id="pesan2">You shine brighter every year! ✨</p>
-        <p id="pesan3">Do you know what makes today extra special?</p>
-        <p id="pesan4" class="sty2">It’s your birthday!</p>
+        <p id="pesan2">Seu brilho ilumina todos os dias! ✨</p>
+        <p id="pesan3">Você não gosta do dia 04 de junho, mas hoje é um dia especial</p>
+        <p id="pesan4" class="sty2">É seu aniversário!</p>
         <p id="pesan5" class="sty2">
-          Today, I wish you a year filled with laughter, love, and unforgettable moments.
-        </p>
+          Hoje é dia de lembrar o quão importante foi o dia em que você nasceu. Você é uma pessoa necessária para o mundo.</p>
         <p id="pesan6" class="sty2">
-          Remember, you deserve every happiness in the world. Celebrate big and enjoy every moment!
+          Lembre, você merece toda felicidade do mundo!
         </p>
 
         <!-- Next Button -->
-        <p id="opsL">Tap to continue the celebration!</p>
+        <p id="opsL">Clique para continuar a celebração!</p>
       </blockquote>
     </div>
 
@@ -86,14 +85,13 @@
     <div id="pesanditolak">
       <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif" />
       <p id="kataditolak">
-        Oops! You can’t skip this birthday magic.
+        Opa! Você não pode passar a surpresa de aniversário.
       </p>
     </div>
   </div>
 
   <script>
-    // Main script remains similar; further changes are made in a.js if needed.
-    const body = document.querySelector("body");
+  const body = document.querySelector("body");
     const swalst = Swal.mixin({
       timer: 2300,
       allowOutsideClick: false,
@@ -102,6 +100,7 @@
       imageHeight: 90,
     });
     audio = new Audio("" + linkmp3.src);
+    audio.volume = 0.1;
     ftganti = 0;
     fungsi = 0;
     fungsiAwal = 0;
@@ -128,12 +127,12 @@
 
     async function inipesan() {
       var { value: nama } = await swals.fire({
-        title: "What's your beautiful name?",
+        title: "Escreva seu nome",
         input: "text",
       });
       if (nama && nama.length < 11) {
         window.nama = nama;
-        vketikhalo = "Happy Birthday, " + nama + "!";
+        vketikhalo = "Feliz aniversário, Princesa!";
         mulainama();
       } else {
         await Swal.fire({
@@ -145,10 +144,10 @@
       }
     }
 
-    var tanya = "How about we celebrate your birthday in style?";
-    var opstanya = "Your choice is:";
-    var tompositif = "Absolutely, let’s celebrate! 🎉";
-    var tomnegatif = "Maybe another time";
+    var tanya = "Podemos celebrar seu aniversário com fofura?";
+    var opstanya = "Você escolhe:";
+    var tompositif = "Sim, vamos celebrar! 🎉";
+    var tomnegatif = "Talvez depois... 😢";
 
     async function pertanyaan() {
       var { isConfirmed: prtanya } = await swals.fire({
@@ -160,10 +159,10 @@
         cancelButtonText: "" + tomnegatif,
       });
       if (prtanya) {
-        pesanwhatsapp = "Yes " + nama + ", let the birthday magic begin!";
+        pesanwhatsapp = "Sim " + nama + ", que a surpresa comece!";
         menuju();
       } else {
-        pesanwhatsapp = nama + ", don't miss out on the birthday fun!";
+        pesanwhatsapp = "Amor, não perca a diversão!";
         await swalst.fire({
           title: "" + kataditolak.innerHTML,
           timer: 2000,
@@ -172,7 +171,7 @@
         menuju();
       }
     }
-  </script>
+</script>
   <script src="a.js"></script>
 </body>
 

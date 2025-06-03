@@ -68,7 +68,7 @@ document.getElementById("By").onclick = function() {
 }
 
 async function menuju(){
-  await swals.fire('Yay!', 'And here comes another birthday surprise for you!', 'success');
+  await swals.fire('Uhuuuul!', 'E aqui vai uma supresa de aniversário para você!', 'success');
   window.location = "./love/index.html";
 }
 
@@ -190,7 +190,7 @@ function aktipesan5(){
     waitUntilVisible: true,
     lifelike: true,
     afterComplete: function(){
-      pesan5.innerHTML = vketik5 + " 😊";
+      pesan5.innerHTML = vketik5 + " ❤️";
       setTimeout(aktipesan6, 700);
     },
   }).go();
